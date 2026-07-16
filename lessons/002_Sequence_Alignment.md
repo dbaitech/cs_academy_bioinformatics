@@ -163,4 +163,4 @@ We can come up with many different scoring schemes to reflect biological context
 
 ## Activities
 
-In `002_003_sequence_alignment.ipynb`, work up to section 3. Hamming Distance. To then move onto Section 4, you should first go through the next Lesson 003: Global Sequence Alignment to learn about how the algorithm works!
+In `002_003_sequence_alignment.ipynb`, work on section 1. Hamming Distance. To then move onto Section 2, you should first go through the next Lesson 003: Global Sequence Alignment to learn about how the algorithm works!

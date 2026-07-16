@@ -1,0 +1,4 @@
+GAP = "-"
+MATCH = 1
+MISMATCH = -1
+GAP_PENALTY = -1

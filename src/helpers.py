@@ -1,6 +1,7 @@
 from Bio import SeqIO
 import numpy as np
 from collections import defaultdict
+from .constants import GAP, MATCH, MISMATCH, GAP_PENALTY
 
 #============================
 # FASTA file Functions
