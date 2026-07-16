@@ -3,9 +3,9 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cs-academy-project"
+name = "cs-academy-bioinformatics"
 version = "0.1.0"
-description = "A CS Academy project — replace with your project's description."
+description = "An introduction to bioinformatics to analyze real DNA!"
 readme = "README.md"
 requires-python = ">=3.9"
 
@@ -17,6 +17,7 @@ requires-python = ">=3.9"
 dependencies = [
     "notebook",     # Jupyter notebook (see notebooks/)
     "numpy",
+    "biopython"
 ]
 
 # =============================================================================
