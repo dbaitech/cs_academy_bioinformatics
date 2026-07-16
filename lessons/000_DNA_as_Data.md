@@ -11,7 +11,7 @@ DNA contains all the instructions an organism needs to build, maintain itself an
 
 The way DNA is structured is actually as a double-helix where the nucelotides A and T must match together and C and G must match together:
 
-![alt text](..\data\images\image.png)
+![alt text](../data/images/image.png)
 
 ## 2. How does a computer store DNA?
 

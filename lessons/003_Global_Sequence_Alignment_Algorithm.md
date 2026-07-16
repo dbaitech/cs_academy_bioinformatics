@@ -41,7 +41,7 @@ We have 3 possible cases:
 
 <br>
 
-![alt text](..\data\images\image-2.png)
+![alt text](../data/images/image-2.png)
 
 We could do this, but let's think about it a little more...
 
@@ -71,7 +71,7 @@ So, to guarantee that we make the right choice, we need to make calculations for
 
 If we work by reading left to right, then for each of the 3 cases for one step, we need to calculate the 3 cases for the next step right and so on, and so on...
 
-![alt text](..\data\images\image-1.png)
+![alt text](../data/images/image-1.png)
 
 This ends up taking a lot longer than we want. Also, we end up <b>repeating work unnecessarily</b>.
 
@@ -81,10 +81,10 @@ For example, say we are at the following step:
 > ACG
 
 We would need to calculate all future paths for each of the 3 cases, including the path highlighted by the purple circles:
-![alt text](..\data\images\image-3.png)
+![alt text](../data/images/image-3.png)
 
 We then determine that the correct next step is case 1. So, we move on to calculating the optimal next step. However, we see that we have to recalculate the path starting at the purple circle once again:
-![alt text](..\data\images\image-4.png)
+![alt text](../data/images/image-4.png)
 
 This repeated work can become very inefficient, especially as the DNA sequences get longer.
 
