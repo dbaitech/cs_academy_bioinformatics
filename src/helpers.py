@@ -48,11 +48,14 @@ def print_kmer_count(kmer_count, organism, extra_info: str = ""):
     print(f"{organism}: {blue_font}{kmer_count:.2f}%{reset_font} {extra_info_str}")
 
 def count_kmers(dna_seq, k):
-    """Returns the kmer counts dictionary and the total
-       number of kmers in the sequence."""
+    # Create kmer dictionary
     kmer_counts = defaultdict(int)
     for i in range(len(dna_seq) - k):
         kmer = dna_seq[i:i+k]
+        # remove any k-mer with invalid characters
+        if any(char not in "ACGT" for char in kmer):
+            continue
+
         kmer_counts[kmer] += 1
 
     return kmer_counts, len(dna_seq) - k
