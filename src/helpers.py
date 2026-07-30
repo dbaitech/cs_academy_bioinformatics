@@ -48,17 +48,20 @@ def print_kmer_count(kmer_count, organism, extra_info: str = ""):
     print(f"{organism}: {blue_font}{kmer_count:.2f}%{reset_font} {extra_info_str}")
 
 def count_kmers(dna_seq, k):
-    # Create kmer dictionary
     kmer_counts = defaultdict(int)
-    for i in range(len(dna_seq) - k):
+    valid_kmer_count = 0
+
+    for i in range(len(dna_seq) - k + 1):
         kmer = dna_seq[i:i+k]
+
         # remove any k-mer with invalid characters
         if any(char not in "ACGT" for char in kmer):
             continue
 
         kmer_counts[kmer] += 1
+        valid_kmer_count += 1
 
-    return kmer_counts, len(dna_seq) - k
+    return kmer_counts, valid_kmer_count
 
 def get_kmer_percentage(kmer_count, total_kmer_count):
   return (kmer_count / total_kmer_count) * 100
