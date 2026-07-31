@@ -30,9 +30,9 @@ And this is exactly how computers store DNA! As strings made of these 4 letters.
 
 The standard method used in bioinformatics to store DNA is through a <b>FASTA file</b>. Its format is very simple and just consists of a header line starting with '>' that contains the name and a description of the organism, followed by the DNA string:
 
-> \>NM_001301720.2 Homo sapiens BRCA1, DNA repair associated
-> ATGGATTTATCTGCTCTTCGCGTTGAAGAAGTACAAAATGTCATTAATGCTATGCAGAAA
-> ATCTTAGAGTGTCCCATCTGTCTGGAGTTGATCAAGGAACCTGTCTCCACAAAGTGTGA
+> \>NM_001301720.2 Homo sapiens BRCA1, DNA repair associated<br>
+> ATGGATTTATCTGCTCTTCGCGTTGAAGAAGTACAAAATGTCATTAATGCTATGCAGAAA<br>
+> ATCTTAGAGTGTCCCATCTGTCTGGAGTTGATCAAGGAACCTGTCTCCACAAAGTGTGA<br>
 > CCACATATTTTGCAAATTTTGCATGCTGAAACTTCTCAACCAGAAGAAAGGGCCTTCACA...
 
 ## 3. How is DNA analyzed?
