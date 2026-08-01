@@ -56,7 +56,7 @@ The first analysis we can do is actually quite simple! We can calculate the <b>G
 This is essentially just a count of the total number Gs and Cs over the total number of letters in the string. We count both because we know that they bind to each other so if one appears on a strand, the other will appear on the other strand.
 
 The formula is:
-$$ GC\% = \frac{\# G + \# C}{\# G + \# C + \# A + \# T} \times 100$$
+$$ GC\% = \frac{\# G + \# C}{DNA.length} \times 100$$
 
 Why exactly would we want to analyze this? Well, it is a very simple <b>genomic signature</b>.
 
